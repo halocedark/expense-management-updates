@@ -1,0 +1,33 @@
+<div class="container-fluid" id="sendMessageContainer">
+	<div class="wrapper">
+		<h1 class="title-medium"><%= UI_DISPLAY_LANG.views.pages.send_message.sectionTitle %></h1>
+	</div>
+	<div class="mt-5 app-block">
+		<div class="alert alert-info my-2" style="display:none;" id="ERROR_BOX">
+			<img src="assets/img/utils/info.png" class="alert-icon" alt="">
+			<div class="alert-text" id="text"></div>
+		</div>
+		<div class="">
+			<form action="#" id="sendMSGToEmployeeForm">
+				<div class="mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.send_message.form01.label05 %></label>
+					<input type="text" class="input-text input-text-outline" id="employeePhoneInput">
+				</div>
+				<div class="mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.send_message.form01.label02 %></label>
+					<input type="text" class="input-text input-text-outline" id="subject2Input" placeholder="<%= UI_DISPLAY_LANG.views.pages.send_message.form01.ph01 %>">
+				</div>
+				<div class="mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.send_message.form01.label02 %></label>
+					<textarea class="input-text input-text-outline" rows="5" id="body2Input" placeholder="<%= UI_DISPLAY_LANG.views.pages.send_message.form01.ph02 %>"></textarea>
+				</div>
+				<div class="">
+					<input type="submit" class="btn btn-primary btn-sm" value="<%= UI_DISPLAY_LANG.views.pages.send_message.form01.submitBTN01 %>">
+					<a href="#" class="text-02 d-none mx-2" id="switchBackToPatientsMessagingBTN">
+						<%= UI_DISPLAY_LANG.views.pages.send_message.link02 %>
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,103 @@
+<div class="container-fluid" id="settingsContainer">
+	<div class="wrapper wrapper-p-2 d-none">
+		<h1 class="title-medium"><%= UI_DISPLAY_LANG.views.pages.settings.sectionTitle %></h1>
+	</div>
+	<div class="alert alert-info my-2" style="display:none;" id="ERROR_BOX">
+		<img src="assets/img/utils/info.png" class="alert-icon" alt="">
+		<div class="alert-text" id="text"></div>
+	</div>
+	<div class="accordion" id="accordionExample">
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<%= UI_DISPLAY_LANG.views.pages.settings.btn01 %>
+				</button>
+			</h2>
+			<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<form action="#" id="updateAccountForm">
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label01 %></label>
+							<input type="text" class="input-text input-text-outline" id="uafNameInput">
+						</div>
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label02 %></label>
+							<select name="" id="uafStateSelect" class="input-text">
+								
+							</select>
+						</div>
+						<div class="form-group mb-2 d-none">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label03 %></label>
+							<input type="text" class="input-text input-text-outline" id="uafCityInput">
+						</div>
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label04 %></label>
+							<input type="text" class="input-text input-text-outline" id="uafAddressInput">
+						</div>
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label16 %></label>
+							<input type="date" class="input-text input-text-outline" id="uafDateBirthInput">
+						</div>
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label15 %></label>
+							<input type="text" class="input-text input-text-outline" id="uafPlaceBirthInput">
+						</div>
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label05 %></label>
+							<input type="text" class="input-text input-text-outline" id="uafPhoneInput">
+						</div>
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label06 %></label>
+							<input type="password" class="input-text input-text-outline" id="uafPassInput">
+						</div>
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form01.label07 %></label>
+							<input type="password" class="input-text input-text-outline" id="uafConfirmPassInput">
+						</div>
+						<div class="form-group">
+							<input type="submit" value="<%= UI_DISPLAY_LANG.views.pages.settings.form01.submitBTN01 %>" class="btn btn-primary btn-sm">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					<%= UI_DISPLAY_LANG.views.pages.settings.btn02 %>
+				</button>
+			</h2>
+			<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<form action="#" id="updateUISettingsForm">
+						<div class="form-group mb-2">
+							<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.settings.form02.label01 %></label>
+							<select name="" class="input-text" id="uiLangSelect">
+								<option value="ar" selected>العربية</option>
+								<option value="fr">français</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary btn-sm" value="<%= UI_DISPLAY_LANG.views.pages.settings.form02.submitBTN01 %>">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headingThree">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Accordion Item #3
+				</button>
+			</h2>
+			<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				</div>
+			</div>
+		</div>
+		-->
+	</div>
+
+</div>

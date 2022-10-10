@@ -1,0 +1,45 @@
+<div class="container-fluid" id="employeesAccountingContainer">
+	<div class="wrapper">
+		<h1 class="title-medium"><%= UI_DISPLAY_LANG.views.pages.employees_accounting.sectionTitle %></h1>
+	</div>
+	<div class="mt-3 app-block" id="wrapper01">
+		<div class="alert alert-info my-2" style="display:none;" id="ERROR_BOX">
+			<img src="assets/img/utils/info.png" class="alert-icon" alt="">
+			<div class="alert-text" id="text"></div>
+		</div>
+		<form action="#" id="addForm">
+			<div class="row gx-4 gy-4">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="mb-2 section">
+						<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.employees_accounting.form01.label01 %></label>
+						<input type="text" class="input-text input-text-outline border-bottom-forced mb-2" placeholder="<%= UI_DISPLAY_LANG.views.pages.employees_accounting.form01.ph01 %>" id="employeesSearchInput">
+						<select name="" class="select-01" id="employeeSelect"></select>
+					</div>
+					<div class="mb-3">
+						<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.employees_accounting.form01.label02 %></label>
+						<input type="number" step="any" min="0" value="0" class="input-text input-text-outline" id="cashoutAmountInput">
+					</div>
+					<div class="mb-3">
+						<div class="form-field-01">
+							<div class="form-field-input-holder">
+								<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.employees_accounting.form01.label03 %></div>
+								<input type="date" id="paymentDateInput" class="form-field-input">
+							</div>
+						</div>
+					</div>
+					<div class="mb-2">
+						<div class="form-field-01">
+							<div class="form-field-input-holder">
+								<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.employees_accounting.form01.label04 %></div>
+								<input type="time" step="any" id="paymentTimeInput" class="form-field-input">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="">
+				<input type="submit" class="btn btn-primary btn-sm shadow" value="<%= UI_DISPLAY_LANG.views.pages.employees_accounting.form01.submitBTN01 %>">
+			</div>
+		</form>
+	</div>
+</div>

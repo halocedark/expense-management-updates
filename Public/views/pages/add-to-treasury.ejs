@@ -1,0 +1,90 @@
+<div class="container-fluid" id="addToTreasuryContainer">
+	<div class="mt-3 app-block">
+		<div class="alert alert-info my-2" style="display:none;" id="ERROR_BOX">
+			<img src="assets/img/utils/info.png" class="alert-icon" alt="">
+			<div class="alert-text" id="text"></div>
+		</div>
+		<div id="wrapper01">
+			<div class="mb-3">
+				<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.label01 %></label>
+				<select name="" class="input-text" id="operationSelect">
+					<option value="IN" selected><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.select01.option01 %></option>
+					<option value="OUT"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.select01.option02 %></option>
+				</select>
+			</div>
+			<div class="mb-3 section">
+				<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.label02 %></label>
+				<input type="text" class="input-text input-text-outline mb-2 border-bottom-forced" id="clinicsSearchInput" placeholder="<%= UI_DISPLAY_LANG.views.pages.add_to_treasury.ph01 %>">
+				<select name="" class="input-text" id="clinicSelect">
+					
+				</select>
+			</div>
+			<form action="#" id="addForm" class="FORM">
+				<div class="mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form01.label01 %></label>
+					<input type="number" step="any" class="input-text input-text-outline" id="treasuryInAmountInput">
+				</div>
+				<div class="mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form01.label02 %></label>
+					<textarea name="" class="input-text input-text-outline" id="treasuryReasonInput" rows="4"></textarea>
+				</div>
+				<div class="mb-4">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form01.label03 %></label>
+					<textarea name="" class="input-text input-text-outline" id="treasuryNoteInput" rows="4"></textarea>
+				</div>
+				<div class="mb-4">
+					<div class="form-field-01">
+						<div class="form-field-input-holder">
+							<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form01.label04 %></div>
+							<input type="date" id="treasuryDateInput" class="form-field-input">
+						</div>
+					</div>
+				</div>
+				<div class="mb-2">
+					<div class="form-field-01">
+						<div class="form-field-input-holder">
+							<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form01.label05 %></div>
+							<input type="time" step="any" id="treasuryTimeInput" class="form-field-input">
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<input type="submit" class="btn btn-primary btn-sm shadow" value="<%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form01.submitBTN01 %>">
+				</div>
+			</form>
+			<form action="#" id="cashoutForm" class="FORM" style="display:none;">
+				<div class="mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form02.label01 %></label>
+					<input type="number" step="any" class="input-text input-text-outline" id="cftreasuryOutAmountInput">
+				</div>
+				<div class="mb-2">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form02.label02 %></label>
+					<textarea name="" class="input-text input-text-outline" id="cftreasuryReasonInput" rows="4"></textarea>
+				</div>
+				<div class="mb-4">
+					<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form02.label03 %></label>
+					<textarea name="" class="input-text input-text-outline" id="cftreasuryNoteInput" rows="4"></textarea>
+				</div>
+				<div class="mb-4">
+					<div class="form-field-01">
+						<div class="form-field-input-holder">
+							<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form02.label04 %></div>
+							<input type="date" id="cftreasuryDateInput" class="form-field-input">
+						</div>
+					</div>
+				</div>
+				<div class="mb-2">
+					<div class="form-field-01">
+						<div class="form-field-input-holder">
+							<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form02.label05 %></div>
+							<input type="time" step="any" id="cftreasuryTimeInput" class="form-field-input">
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<input type="submit" class="btn btn-primary btn-sm shadow" value="<%= UI_DISPLAY_LANG.views.pages.add_to_treasury.form02.submitBTN01 %>">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

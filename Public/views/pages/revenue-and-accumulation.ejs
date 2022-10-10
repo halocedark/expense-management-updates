@@ -1,0 +1,185 @@
+<div class="container-fluid" id="revenueAndAccumulationContainer">
+	<div class="wrapper d-none">
+		<h1 class="title-medium"><%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.sectionTitle %></h1>
+	</div>
+	<div class="mt-3">
+		<div class="alert alert-info my-2" style="display:none;" id="ERROR_BOX">
+			<img src="assets/img/utils/info.png" class="alert-icon" alt="">
+			<div class="alert-text" id="text"></div>
+		</div>
+	</div>
+	<div class="app-block my-3 d-none">
+		<div class="form-field-01">
+			<div class="form-field-input-holder">
+				<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.label02 %></div>
+				<input type="date" id="dateInput" class="form-field-input">
+			</div>
+		</div>
+	</div>
+	<div class="app-block mt-2">
+		<div class="mb-2 section">
+			<label for="" class="form-label"><%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.label01 %></label>
+			<select name="" class="select-01" id="clinicSelect">
+			
+			</select>
+		</div>
+	</div>
+	<div class="mt-2 row gx-4 gy-3">
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<div class="row gx-2 gy-2">
+				<div class="col-lg col-md col-sm-12">
+					<div class="d-flex flex-center">
+						<div class="stat-2 stat-2-striped" id="todayStatDiv">
+							<div class="text-01 text-white text-center mb-3">
+								<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text01 %>
+							</div>
+							<div class="stat-details row gx-2 gy-2">
+								<div class="col">
+									<span class="stat-detail-icon"><i class="fas fa-dollar-sign"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text02 %>
+									</span>
+									<div class="text-04 text-white" id="revenueValue">0</div>
+								</div>
+								<div class="col">
+									<span class="stat-detail-icon"><i class="fas fa-shopping-cart"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text03 %>
+									</span>
+									<div class="text-04 text-white" id="ordersValue">0</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row gx-2 gy-2 mt-3">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="d-flex flex-center">
+						<div class="stat-2" id="yesterdayStatDiv">
+							<div class="stat-icon-bg">
+								<i class="fas fa-dollar-sign"></i>
+							</div>
+							<div class="text-01 text-white text-center mb-3">
+								<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text04 %>
+							</div>
+							<div class="stat-details">
+								<div class="mb-2">
+									<span class="stat-detail-icon"><i class="fas fa-dollar-sign"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text02 %>
+									</span>
+									<div class="text-04 text-white" id="revenueValue">0</div>
+								</div>
+								<div class="">
+									<span class="stat-detail-icon"><i class="fas fa-shopping-cart"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text03 %>
+									</span>
+									<div class="text-04 text-white" id="ordersValue">0</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="d-flex flex-center">
+						<div class="stat-2" style="background: #d79533;" id="currentWeekStatDiv">
+							<div class="stat-icon-bg">
+								<i class="fas fa-dollar-sign"></i>
+							</div>
+							<div class="text-01 text-white text-center mb-3">
+								<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text05 %>
+							</div>
+							<div class="stat-details">
+								<div class="mb-2">
+									<span class="stat-detail-icon"><i class="fas fa-dollar-sign"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text02 %>
+									</span>
+									<div class="text-04 text-white" id="revenueValue">0</div>
+								</div>
+								<div class="">
+									<span class="stat-detail-icon"><i class="fas fa-shopping-cart"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text03 %>
+									</span>
+									<div class="text-04 text-white" id="ordersValue">0</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row gx-2 gy-2 mt-3">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="d-flex flex-center">
+						<div class="stat-2" style="background:#6abb38;" id="currentMonthStatDiv">
+							<div class="stat-icon-bg">
+								<i class="fas fa-dollar-sign"></i>
+							</div>
+							<div class="text-01 text-white text-center mb-3">
+								<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text06 %>
+							</div>
+							<div class="stat-details">
+								<div class="mb-2">
+									<span class="stat-detail-icon"><i class="fas fa-dollar-sign"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text02 %>
+									</span>
+									<div class="text-04 text-white" id="revenueValue">0</div>
+								</div>
+								<div class="">
+									<span class="stat-detail-icon"><i class="fas fa-shopping-cart"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text03 %>
+									</span>
+									<div class="text-04 text-white" id="ordersValue">0</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="d-flex flex-center">
+						<div class="stat-2" style="background: #b9273b;" id="currentYearStatDiv">
+							<div class="stat-icon-bg">
+								<i class="fas fa-dollar-sign"></i>
+							</div>
+							<div class="text-01 text-white text-center mb-3">
+								<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text07 %>
+							</div>
+							<div class="stat-details">
+								<div class="mb-2">
+									<span class="stat-detail-icon"><i class="fas fa-dollar-sign"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text02 %>
+									</span>
+									<div class="text-04 text-white" id="revenueValue">0</div>
+								</div>
+								<div class="">
+									<span class="stat-detail-icon"><i class="fas fa-shopping-cart"></i></span>
+									<span class="stat-detail-text mb-2">
+										<%= UI_DISPLAY_LANG.views.pages.revenue_and_accumulation.text03 %>
+									</span>
+									<div class="text-04 text-white" id="ordersValue">0</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<div class="row gx-3 gy-3">
+				<div class="col-md-12 col-sm-12 app-block">
+					<canvas id="chartEl01" class=""></canvas>
+				</div>
+				<div class="col-md-12 col-sm-12 app-block">
+					<canvas id="chartEl02" class=""></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

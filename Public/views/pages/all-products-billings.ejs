@@ -1,0 +1,123 @@
+<div class="container-fluid" id="allProductsBillingsContainer">
+	<div class="wrapper d-none">
+		<h1 class="title-medium"><%= UI_DISPLAY_LANG.views.pages.all_products_billings.sectionTitle %></h1>
+	</div>
+	<div class="mt-3">
+		<div class="alert alert-info my-2" style="display:none;" id="ERROR_BOX">
+			<img src="assets/img/utils/info.png" class="alert-icon" alt="">
+			<div class="alert-text" id="text"></div>
+		</div>
+		<div class="py-4 px-3 mb-3 bg-white border rounded">
+			<div class="row gx-4 gy-3">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="form-field-01">
+						<div class="form-field-icon-holder" id="searchBTN">
+							<img src="assets/img/utils/search.svg" class="form-field-icon" alt="">	
+						</div>
+						<div class="form-field-input-holder">
+							<input type="text" id="searchInput" class="form-field-input" placeholder="<%= UI_DISPLAY_LANG.views.pages.all_products_billings.ph01 %>">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="form-field-01">
+						<div class="form-field-input-holder">
+							<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.all_products_billings.text01 %></div>
+							<input type="date" id="fromDateInput" class="form-field-input">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="form-field-01">
+						<div class="form-field-input-holder">
+							<div class="form-field-label"><%= UI_DISPLAY_LANG.views.pages.all_products_billings.text02 %></div>
+							<input type="date" id="toDateInput" class="form-field-input">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<button class="btn btn-danger btn-sm" id="deleteSelectedBTN">
+						<%= UI_DISPLAY_LANG.views.pages.all_products_billings.btn01 %>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="pagination" class="flex flex-center my-3"></div>
+		<div class="table-div bg-white border rounded">
+			<table class="table-01" id="tableElement">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th><%= UI_DISPLAY_LANG.views.pages.all_products_billings.th01 %></th>
+						<th><%= UI_DISPLAY_LANG.views.pages.all_products_billings.th02 %></th>
+						<th><%= UI_DISPLAY_LANG.views.pages.all_products_billings.th04 %></th>
+						<th><%= UI_DISPLAY_LANG.views.pages.all_products_billings.th06 %></th>
+						<th><%= UI_DISPLAY_LANG.views.pages.all_products_billings.th05 %></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--
+					<tr class="expand-row">
+						<td>
+							<input type="checkbox" class="form-check-input" data-role="CHECK" data-orderid="">
+						</td>
+						<td> HG38020496 </td>
+						<td> 2022-06-17 </td>
+						<td> - </td>
+						<td> $11.99 </td>
+						<td style="width:20px">
+							<svg part="svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" aria-labelledby="ic-caret-up" focusable="false" viewBox="0 0 24 24" class="expand-icon" dataV17f0a767=""><g><path fill-rule="evenodd" clip-rule="evenodd" d="M7.41 15.41L12 10.83L16.59 15.41L18 14L12 8L6 14L7.41 15.41Z"></path></g></svg>
+						</td>
+					</tr>
+					<tr class="expand-row__row" style="display:none;">
+						<td colspan="10">
+							<table class="table-01">
+								<thead>
+									<tr>
+										<th>Product</th>
+										<th>Quantity</th>
+										<th>Unit Price</th>
+										<th>Dept (DA)</th>
+										<th>Dept (%)</th>
+										<th>Total Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<td>Renew Premium Web Hosting (crstra-saffromfood.com)</td>
+									<td>3</td>
+									<td>1880.00</td>
+									<td>880.00</td>
+									<td>32.12%</td>
+									<td>1880.00</td>
+								</tbody>
+							</table>
+							<div class="order-price-table">
+								<div class="order-price-table-contents">
+									<div>
+										<strong>product price</strong>
+										<span>11.25$</span>
+									</div>
+									<div>
+										<strong>dept (%)</strong>
+										<span>0.00%</span>
+									</div>
+									<div>
+										<strong>sell price</strong>
+										<span>11.25</span>
+									</div>
+									<div class="border-top my-1"></div>
+									<div>
+										<strong>total</strong>
+										<span>11.25</span>
+									</div>	
+								</div>
+							</div>
+						</td>
+					</tr>
+					-->
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
